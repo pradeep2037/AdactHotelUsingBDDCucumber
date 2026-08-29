@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.112" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-08-29T03:40:35.693816300Z">
-<testcase classname="AdactIn Select Hotel" name="Verify total price calculation on Select Hotel page - #1.1" time="12.795">
-<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;-123&gt; but was: &lt;250&gt;">
-<![CDATA[org.opentest4j.AssertionFailedError: expected: <-123> but was: <250>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at stepdefinitions.SelectHotelSteps.total_price_should_be_calculated_correctly(SelectHotelSteps.java:73)
-	at ✽.total price should be calculated correctly(classpath:features/SelectHotel.feature:23)
-]]>
-</failure>
+<testsuite name="Cucumber" time="28.396" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-29T04:16:33.813630900Z">
+<testcase classname="AdactIn Select Hotel" name="Verify total price calculation on Select Hotel page - #1.1" time="27.686">
 <system-out><![CDATA[
 Given user is logged into the Adactin application...........................passed
 Given user searches hotel with location "Sydney", hotel "Hotel Creek", room type "Standard", rooms "2 - Two", check-in "27/08/2067", check-out "28/08/2067" and adults-per-room "2 - Two".passed
-Then total price should be calculated correctly.............................failed
+Then total price should be calculated correctly.............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
