@@ -1,5 +1,7 @@
 package hooks;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import driver.DriverFactory;
@@ -15,6 +17,7 @@ public class Hooks {
 	public void setUp() {
 
 		DriverFactory.initializeDriver();
+
 		WebDriver driver = DriverFactory.getDriver();
 		driver.get(ConfigReader.getProperty("url"));
 	}
@@ -23,10 +26,20 @@ public class Hooks {
 	public void tearDown(Scenario scenario) {
 
 		try {
-			if (scenario.isFailed()) {
-				ScreenshotUtils.takeScreenshot(DriverFactory.getDriver(), scenario.getName());
 
+			if (scenario.isFailed()) {
+
+				WebDriver driver = DriverFactory.getDriver();
+
+				// Save screenshot as physical file
+				ScreenshotUtils.takeScreenshot(driver, scenario.getName());
+
+				// Attach screenshot to Cucumber report
+				byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+				scenario.attach(screenshot, "image/png", scenario.getName());
 			}
+
 		} finally {
 
 			DriverFactory.quitDriver();
