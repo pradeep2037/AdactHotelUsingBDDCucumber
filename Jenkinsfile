@@ -9,12 +9,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Run Automation Tests') {
             steps {
                 bat 'mvn clean test'
@@ -25,8 +19,9 @@ pipeline {
     post {
 
         always {
-            junit allowEmptyResults: true,
-                  testResults: 'target/cucumber-reports/cucumber.xml'
+
+            junit testResults: 'target/cucumber-reports/cucumber.xml',
+                  allowEmptyResults: true
 
             archiveArtifacts artifacts: 'target/cucumber-reports/**/*',
                              allowEmptyArchive: true
