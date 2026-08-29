@@ -12,7 +12,7 @@ pipeline {
         stage('Run Automation Tests') {
 
             steps {
-                bat 'mvn clean test'
+                bat 'mvn clean test -Dheadless=true'
             }
         }
     }
