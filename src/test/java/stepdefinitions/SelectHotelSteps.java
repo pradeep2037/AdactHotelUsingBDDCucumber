@@ -68,7 +68,7 @@ public class SelectHotelSteps {
 		String[] totalPrice = selectHotelPage.getTotalPrice().split(" ");
 		int expectedTotalPrice = Integer.parseInt(totalPrice[2]);
 		
-		int actualTotalPrice = numOfRooms-roomPricePerNight;
+		int actualTotalPrice = numOfRooms*roomPricePerNight;
 		
 		Assertions.assertEquals(actualTotalPrice, expectedTotalPrice);
 
