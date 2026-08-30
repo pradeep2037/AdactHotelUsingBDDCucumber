@@ -14,3 +14,7 @@ Feature: Adact Hotel Login
       | Valid username invalid password   | pradeep2000 | iuiui    | Invalid Login details or Your Password might have expired. Click here to reset your password |
       | Invalid username valid password   | prad        | 1A3VTX   | Invalid Login details or Your Password might have expired. Click here to reset your password |
       | Invalid username invalid password | prad        | uou      | Invalid Login details or Your Password might have expired. Click here to reset your password |
+      
+      
+      
+      //HURRYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
