@@ -1,6 +1,0 @@
-utils\ScreenshotUtils.class
-driver\DriverFactory.class
-utils\ConfigReader.class
-utils\TextContext.class
-hooks\Hooks.class
-utils\WaitUtils.class

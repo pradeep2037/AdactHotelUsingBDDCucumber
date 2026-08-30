@@ -1,7 +1,0 @@
-stepdefinitions\LoginSteps.class
-pages\LoginPage.class
-runners\TestRunner.class
-stepdefinitions\SearchHotelSteps.class
-stepdefinitions\SelectHotelSteps.class
-pages\SelectHotelPage.class
-pages\SearchHotelPage.class
