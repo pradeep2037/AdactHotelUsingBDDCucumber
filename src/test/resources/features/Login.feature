@@ -17,4 +17,4 @@ Feature: Adact Hotel Login
       
       
 
-User 1
+User 2
