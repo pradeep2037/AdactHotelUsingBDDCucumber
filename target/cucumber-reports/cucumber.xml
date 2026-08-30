@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.553" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-29T04:33:01.810665200Z">
-<testcase classname="AdactIn Select Hotel" name="Verify total price calculation on Select Hotel page - #1.1" time="10.327">
+<testsuite name="Cucumber" time="23.3" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-30T08:23:23.180305500Z">
+<testcase classname="AdactIn Select Hotel" name="Verify total price calculation on Select Hotel page - #1.1" time="22.959">
 <system-out><![CDATA[
 Given user is logged into the Adactin application...........................passed
 Given user searches hotel with location "Sydney", hotel "Hotel Creek", room type "Standard", rooms "2 - Two", check-in "27/08/2067", check-out "28/08/2067" and adults-per-room "2 - Two".passed
