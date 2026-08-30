@@ -17,4 +17,8 @@ Feature: Adact Hotel Login
       
       
 
+<<<<<<< HEAD
 GitConflict On User1
+=======
+User 2
+>>>>>>> origin/master
