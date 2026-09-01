@@ -15,4 +15,4 @@ Feature: Adact Hotel Login
       | Invalid username valid password   | prad        | 1A3VTX   | Invalid Login details or Your Password might have expired. Click here to reset your password |
       | Invalid username invalid password | prad        | uou      | Invalid Login details or Your Password might have expired. Click here to reset your password |
       
-      
+
