@@ -16,7 +16,6 @@ public class Hooks {
 	@Before
 	public void setUp() {
 
-		System.out.println("Hello user2 Branch");
 		DriverFactory.initializeDriver();
 
 		WebDriver driver = DriverFactory.getDriver();
