@@ -13,7 +13,7 @@ import org.junit.platform.suite.api.Suite;
 
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "stepdefinitions,hooks")
 
-@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@TotalPriceCalculationInSelectedHotel")
+//@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@SelectHotel")
 
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty,"
 		+ "html:target/cucumber-reports/cucumber-report.html," + "json:target/cucumber-reports/cucumber.json,"
